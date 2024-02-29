@@ -1,0 +1,93 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Contact {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <main>
+        
+    
+
+        <!-- Hero -->
+        <div class="page-title text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="card border-0 p-2 p-md-3 p-lg-5">
+                        <h2><i class="fa fa-envelope-o"></i> Contact us</h2>
+                    </div><!-- end col -->
+                                     
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </div><!-- end page-title -->
+
+ 
+        <!-- Section -->
+        <section class="section section-lg pt-6">
+            <div class="container">
+                <div class="row justify-content-center mb-5 mb-lg-6">
+                    <div class="col-12 col-lg-8">
+                        <!-- Contact Card -->
+                        <div class="card border-0 p-2 p-md-3 p-lg-5">
+                            <div class="card-header bg-white border-0 text-center">
+                                <h2>Vision:</h2>
+                                <p>At Digital Tourism Africa, our vision is to redefine the way the world 
+                                    experiences and engages with the diverse beauty of the African continent. 
+                                    We aspire to be the premier digital platform that seamlessly connects global 
+                                    travelers, passionate explorers, and industry stakeholders to the rich 
+                                    tapestry of African destiny.</p>
+                            </div>
+                            <div class="card-header bg-white border-0 text-center">
+                                <h2>Mission:</h2>
+                                <p>At Digital Tourism Africa, our mission is to democratize access to the 
+                                    richness and diversity of Africa's Travel and Tourism by leveraging digital innovation.</p>
+                            </div>
+                            
+                            <div class="card-body px-0 pt-0">
+                                <form action="#">
+                                    <!-- Form -->
+                                    <div class="mb-4">
+                                        <label for="name">Your Name</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon3"></span>
+                                            <input type="text" class="form-control" id="name" required>
+                                        </div>
+                                    </div>
+                                    <!-- End of Form -->
+                                    <!-- Form -->
+                                    <div class="mb-4">
+                                        <label for="email">Your Email</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon4"></span>
+                                            <input type="email" class="form-control" placeholder="example@company.com" id="email" required>
+                                        </div>
+                                    </div>
+                                    <!-- End of Form -->
+                                    <div class="mb-4">
+                                        <label for="message">Your Message</label>
+                                        <textarea placeholder="Your message" class="form-control" id="message" rows="4" required></textarea>
+                                    </div>
+                                    <!-- End of Form -->
+                                    <div class="d-grid text-center">
+                                        <button type="submit" class="btn rounded btn-secondary">Send message</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- End of Contact Card -->
+                    </div>
+                
+            </div>
+        </section>
+        <!-- End of section -->
+
+    </main>
+
+    {% include 'includes/footer.html' %}
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
